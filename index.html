@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/afbc885c73.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pics/coder.png" class="logo">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">Experiance</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hey,I'm Sayak</h1>
+                <p>Machine Learning Enthusiast</p>
+            </div>
+        </div>
+    </div>
+    <!-----------about------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pics/IMG_2796.JPG" class="photo-1">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a third-year student pursuing B.Tech in Computer Science and
+                        Engineering with specialization in Artificial Intelligence and
+                        Machine Learning from SRM Institute of Science and Technology,
+                        Kattankulathur</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experiance')">Experiance</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Machine Learning</span><br>work on Machine Learning projects</li>
+                                <li><span>Web Development</span><br>Resposive website Development</li>
+                                <li><span>Graphic Design</span><br>designing posters in adobe photoshop</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experiance">
+                            <ul>
+                                <li><span>Machine Learning Intern</span><br>Suvidha Foundation <br>Jan,2023-Feb,2023</li>
+                                <li><span>Graphic Designer</span><br>Aaruush Creatives,SRMIST <br>Apr,2022-Sep,2022</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Secondary Education</span><br>Vivekananda Mission Asram Sikshayatan <br>2013-2018,Haldia</li>
+                                <li><span>Higher Secondary Education</span><br>Haldia Govt. Sponsored Vivekananda Vidyabhawan <br>2018-2020,Haldia</li>
+                                <li><span>B.Tech CSE specialization in AI & ML</span><br>SRM Institute of Science and Technology <br>Sep,2020-Jun,2024, Chennai</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------portfolio---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pics/skincancer.png">
+                    <div class="layer">
+                        <h3>Skin Cancer Detection</h3>
+                        <p>This ML model efficiently detects the Melanoma skin cancer.</p>
+                        <a href="https://github.com/sayak-1108/Skin-Cancer-Detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pics/doggy-door.jpg">
+                    <div class="layer">
+                        <h3>Automated Doggy Door</h3>
+                        <p>This Deep Learning model identifies dogs and open the door for them</p>
+                        <a href="https://github.com/sayak-1108/Automated-Doggy-Door"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pics/Face-mask.jpeg">
+                    <div class="layer">
+                        <h3>Real Time Face Mask Detection</h3>
+                        <p>This Project helps to detect who wear face mask at real time</p>
+                        <a href="https://github.com/sayak-1108/Real-time-face-mask-detection"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------contact------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> das.sayak1108@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/sayak_1108?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Sayak_Das11"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/sayak-das-13b6761b3"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sayak-1108"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="Document/Sayak Das Resume (2).pdf" downlaod class="btn">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message"rows="6" placeholder="Yout Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sayak Das</p>
+        </div>
+    </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function openTab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
